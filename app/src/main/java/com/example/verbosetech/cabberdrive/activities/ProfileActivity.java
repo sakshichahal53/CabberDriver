@@ -1,10 +1,12 @@
-package com.example.verbosetech.cabberdrive;
+package com.example.verbosetech.cabberdrive.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+
+import com.example.verbosetech.cabberdrive.R;
 
 public class ProfileActivity extends AppCompatActivity {
 

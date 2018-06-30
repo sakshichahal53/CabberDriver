@@ -1,4 +1,4 @@
-package com.example.verbosetech.cabberdrive;
+package com.example.verbosetech.cabberdrive.helpers;
 
 import android.app.Activity;
 import android.content.Context;

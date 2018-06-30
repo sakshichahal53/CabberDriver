@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DocumentsActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_setttings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="SETTINGS"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_documents"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Map Settings"
+        android:textSize="12dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ctv_nav_provider"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_below="@+id/tv_documents"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Navigation Provider"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Google Map"
+            android:textSize="12dp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ctv_show_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_below="@+id/ctv_nav_provider">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="29dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Show Traffic on Map"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="304dp"
+            android:src="@drawable/ic_check_box_black_24dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctv_show_traffic"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Other"
+        android:textSize="12dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ctv_account_status"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_below="@+id/ctv_show_traffic"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="29dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Account Status"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="300dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_below="@+id/ctv_show_traffic"
+        android:layout_marginTop="137dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="29dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Contacts"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

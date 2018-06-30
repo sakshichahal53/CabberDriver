@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RiderInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/img_profile_pic"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="172dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_picture_small"
+        />
+
+    <TextView
+        android:layout_below="@+id/img_profile_pic"
+        android:layout_marginTop="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SACHIN PAREKH"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="30dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 9992359339"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/img_profile_pic"
+        android:layout_marginTop="76dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_below="@+id/img_profile_pic"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="5"
+        android:layout_marginLeft="120dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingLeft="14dp"
+            android:text="4.7"
+            android:lines="1"
+            android:textSize="11sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:paddingTop="6dp"
+            android:rating="4.5"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            android:stepSize="0.1"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:transformPivotX="0dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="272dp"
+        android:layout_height="40dp"
+        android:background="@drawable/input_merged_edittext"
+        android:backgroundTint="@color/colorAccent"
+        android:text="CANCEL TRIP"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="12dp"
+        />
+
+</RelativeLayout>

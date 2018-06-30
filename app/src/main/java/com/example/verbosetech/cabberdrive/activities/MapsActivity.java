@@ -1,10 +1,11 @@
-package com.example.verbosetech.cabberdrive;
+package com.example.verbosetech.cabberdrive.activities;
 
 import android.content.res.Resources;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.verbosetech.cabberdrive.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -32,7 +33,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {try {
 
         boolean success = googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(
-                this,R.raw.styles));
+                this, R.raw.styles));
 
         if (!success) {
             Log.e(TAG, "Style parsing failed.");
