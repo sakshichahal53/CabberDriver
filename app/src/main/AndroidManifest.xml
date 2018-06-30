@@ -31,10 +31,12 @@
         <activity android:name=".helpers.SplashScreen" />
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.Fare_and_RateActivity" />
-        <activity android:name=".activities.ShowLocationsActivity"></activity>
-        <activity android:name=".activities.EarningsActivity">
-        </activity>
+        <activity android:name=".activities.ShowLocationsActivity" />
+        <activity android:name=".activities.EarningsActivity"></activity>
         <activity android:name=".activities.SettingsActivity">
+
+        </activity>
+        <activity android:name=".activities.MyTripsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
