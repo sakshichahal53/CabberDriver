@@ -32,11 +32,12 @@
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.Fare_and_RateActivity" />
         <activity android:name=".activities.ShowLocationsActivity" />
-        <activity android:name=".activities.EarningsActivity"></activity>
-        <activity android:name=".activities.SettingsActivity">
+        <activity android:name=".activities.EarningsActivity" />
+        <activity android:name=".activities.SettingsActivity"></activity>
+        <activity android:name=".activities.MyTripsActivity">
 
         </activity>
-        <activity android:name=".activities.MyTripsActivity">
+        <activity android:name=".activities.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
