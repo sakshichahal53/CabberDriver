@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Drive"
+        android:gravity="top"
         android:textColor="@color/colorAccent"
         android:fontFamily="@font/montserrat_regular"
         android:textSize="15sp"

@@ -50,10 +50,11 @@
         android:layout_marginLeft="120dp">
 
         <TextView
-            android:layout_width="30dp"
+            android:layout_width="34dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_regular"
-            android:paddingLeft="14dp"
+            android:paddingLeft="18dp"
+            android:layout_marginRight="10dp"
             android:text="4.7"
             android:lines="1"
             android:textSize="11sp" />
@@ -65,12 +66,9 @@
             android:layout_weight="1"
             android:numStars="5"
             android:paddingTop="6dp"
-            android:rating="4.5"
             android:scaleX="0.3"
             android:scaleY="0.3"
-            android:stepSize="0.1"
-            android:paddingLeft="10dp"
-            android:layout_marginLeft="10dp"
+            android:stepSize="1"
             android:transformPivotX="0dp" />
 
     </LinearLayout>

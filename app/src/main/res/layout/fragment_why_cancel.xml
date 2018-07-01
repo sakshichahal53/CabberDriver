@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Why are you cancelling?"
+            android:textColor="#3e7c1c"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Rider not shown"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="132dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Rider Requested Cancel"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="177dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Wrong Address Shown"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="225dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Other"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
