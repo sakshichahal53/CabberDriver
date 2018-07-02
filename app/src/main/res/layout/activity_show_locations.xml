@@ -36,7 +36,8 @@
                 android:text="Info"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="12dp"
-                android:layout_marginLeft="64dp"/>
+                android:layout_marginLeft="64dp"
+                android:textColor="@color/white"/>
 
         </android.support.v7.widget.Toolbar>
 
