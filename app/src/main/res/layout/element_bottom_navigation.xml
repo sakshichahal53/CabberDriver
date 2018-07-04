@@ -1,104 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="55dp"
-    android:orientation="horizontal"
-    android:weightSum="4"
-    android:layout_marginTop="4dp"
-    android:layout_alignParentBottom="true"
-    android:paddingTop="4dp"
-    android:background="@color/white">
+    android:layout_height="match_parent"
+   >
 
     <LinearLayout
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="4dp"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
 
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_directions_car_bottom_nav"/>
-
-        <TextView
-            android:layout_gravity="center"
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_weight="1"
+            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="12sp"
-            android:layout_marginTop="7dp"/>
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_home_navbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_car_bottom_nav"/>
+
+            <TextView
+                android:id="@+id/tv_home_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="12sp"
+                android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ratings"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_ratings_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_bottom_nav"/>
+
+            <TextView
+                android:id="@+id/tv_ratings_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ratings"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="12sp"
+                android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_earnings"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_earnings_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_balance_wallet_bottomnav"/>
+
+            <TextView
+                android:id="@+id/tv_earnings_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earnings"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="12sp"
+                android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_profile_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_bottom_nav"/>
+
+            <TextView
+                android:id="@+id/tv_profile_navbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="12sp"
+                android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_star_bottom_nav"/>
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ratings"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="12sp"
-            android:layout_marginTop="7dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_account_balance_wallet_bottomnav"/>
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Earnings"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="12sp"
-            android:layout_marginTop="7dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_person_bottom_nav"/>
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="12sp"
-            android:layout_marginTop="7dp"/>
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

@@ -11,10 +11,10 @@ public class DocumentsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_offline);
+        setContentView(R.layout.activity_documents);
 
 
-        Toolbar toolbar=findViewById(R.id.toolbar_home_offline);
+        Toolbar toolbar=findViewById(R.id.toolbar_documents);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);

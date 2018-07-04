@@ -17,4 +17,15 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive"
+        android:gravity="top"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="15sp"
+        android:layout_below="@id/imageView3"
+        android:layout_marginLeft="189dp"/>
 </RelativeLayout>

@@ -1,11 +1,13 @@
 package com.example.verbosetech.cabberdrive.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,7 +15,7 @@ import com.example.verbosetech.cabberdrive.R;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private Button btn_continuew_login;
+    private Button btn_continue_login;
     private TextView tv_nav_signup, tv_fgot_pass;
 
 
@@ -51,6 +53,13 @@ public class SignInActivity extends AppCompatActivity {
 
 
 
+        btn_continue_login=findViewById(R.id.btn_log_in);
+        btn_continue_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignInActivity.this,HomeActivity.class));
+            }
+        });
 
     }
 }

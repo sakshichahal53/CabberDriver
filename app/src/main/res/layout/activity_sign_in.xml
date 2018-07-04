@@ -130,7 +130,7 @@
 
 
     <Button
-        android:id="@+id/btn_logged_in"
+        android:id="@+id/btn_log_in"
         android:layout_width="302dp"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
@@ -150,7 +150,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_below="@+id/btn_logged_in"
+        android:layout_below="@+id/btn_log_in"
         android:layout_marginBottom="45dp">
 
         <TextView

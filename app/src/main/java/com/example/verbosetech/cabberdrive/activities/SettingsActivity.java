@@ -13,7 +13,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        Toolbar toolbar=findViewById(R.id.toolbar_documents);
+        Toolbar toolbar=findViewById(R.id.toolbar_setttings);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
