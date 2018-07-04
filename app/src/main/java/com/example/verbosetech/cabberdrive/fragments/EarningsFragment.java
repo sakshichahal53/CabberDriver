@@ -1,38 +1,38 @@
-package com.example.verbosetech.cabberdrive.activities;
+package com.example.verbosetech.cabberdrive.fragments;
 
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.verbosetech.cabberdrive.R;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GridLabelRenderer;
 import com.jjoe64.graphview.ValueDependentColor;
-import com.jjoe64.graphview.helper.StaticLabelsFormatter;
 import com.jjoe64.graphview.series.BarGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.DataPointInterface;
-import com.jjoe64.graphview.series.LineGraphSeries;
 import com.jjoe64.graphview.series.OnDataPointTapListener;
 import com.jjoe64.graphview.series.Series;
 
-public class EarningsActivity extends AppCompatActivity {
+public class EarningsFragment extends android.support.v4.app.Fragment{
+    public EarningsFragment() {
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        View view=inflater.inflate(R.layout.fragment_earnings,container,false);
+        return view;
+
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_earnings);
-
-
-        Toolbar toolbar=findViewById(R.id.toolbar_earnings);
-        setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-
-
-        GraphView graph = (GraphView) findViewById(R.id.graph);
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        GraphView graph = (GraphView) view.findViewById(R.id.graph);
 
         graph.setBackgroundColor(getResources().getColor(R.color.colorAccent));
         BarGraphSeries<DataPoint> series = new BarGraphSeries<>(new DataPoint[] {
@@ -59,15 +59,10 @@ public class EarningsActivity extends AppCompatActivity {
 
         GridLabelRenderer gridLabelRenderer = graph.getGridLabelRenderer();
         //  graph.getGridLabelRenderer().setVerticalLabelsColor(R.color.white);
-       // graph.getGridLabelRenderer().setHorizontalLabelsColor(R.color.white);
+        // graph.getGridLabelRenderer().setHorizontalLabelsColor(R.color.white);
         gridLabelRenderer.setGridColor(R.color.graph_uncliked);
         gridLabelRenderer.setGridStyle( GridLabelRenderer.GridStyle.HORIZONTAL);
         gridLabelRenderer.reloadStyles();
-
-        StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(graph);
-        staticLabelsFormatter.setHorizontalLabels(new String[] {"M", "TU", "W","TH","F","SA","SU"});
-        graph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
-        graph.getGridLabelRenderer().setNumHorizontalLabels(7);
 
         series.setValueDependentColor(new ValueDependentColor<DataPoint>() {
             @Override
@@ -90,3 +85,4 @@ public class EarningsActivity extends AppCompatActivity {
 
 
 }
+

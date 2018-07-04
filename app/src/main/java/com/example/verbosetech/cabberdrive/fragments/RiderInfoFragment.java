@@ -15,7 +15,7 @@ import com.example.verbosetech.cabberdrive.R;
 import com.example.verbosetech.cabberdrive.others.GlobalVariables;
 
 
-public class RiderInfoFragment extends android.app.Fragment {
+public class RiderInfoFragment extends Fragment {
 
 
     private GlobalVariables global_var;
