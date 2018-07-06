@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,11 +46,14 @@ public class RiderInfoFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                FragmentManager fm = getActivity().getFragmentManager();
+                android.support.v4.app.FragmentManager fm = getFragmentManager();
                 ((GlobalVariables) getActivity().getApplication()).setIs_cancelled(true);
 
                 fm.popBackStack ("info_rider", FragmentManager.POP_BACK_STACK_INCLUSIVE);
 
+                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_nav_bar, new AcceptRiderCopyFragment(), "Rider Request");
+                fragmentTransaction.commit();
             }
         });
     }

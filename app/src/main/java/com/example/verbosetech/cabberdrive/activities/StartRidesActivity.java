@@ -81,11 +81,11 @@ public class StartRidesActivity extends AppCompatActivity implements OnMapReadyC
         source_marker=google_map.addMarker(s_markerOptions);
         dest_marker=google_map.addMarker(d_marker_options);
 
-        google_map_g.moveCamera(CameraUpdateFactory.newLatLngZoom(source_latlng, 10));
+        google_map.moveCamera(CameraUpdateFactory.newLatLngZoom(source_latlng, 10));
 
 
         //Log.e(TAG, String.valueOf(s_markerOptions)+String.valueOf(s_markerOptions));
-     //  draw_routes.set_markers(source_marker,dest_marker,google_map_g);
+       draw_routes.set_markers(source_marker,dest_marker,google_map);
 
     }
 

@@ -29,7 +29,6 @@ public class DrawRoutes {
     private Context context;
     private Marker s_marker, d_marker;
     private GoogleMap google_map_this;
-    private ArrayList markerpoints = new ArrayList<>();
     private MapDirectionsHelper directions_helper;
 
     private PolylineOptions lineOptions = null;
@@ -38,7 +37,7 @@ public class DrawRoutes {
     public DrawRoutes(Context context) {
         this.context = context;
         directions_helper = new MapDirectionsHelper(context);
-        markerpoints = new ArrayList();
+
 
     }
 

@@ -18,11 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -32,7 +28,13 @@
         <activity android:name=".activities.ProfileActivity" />
         <activity android:name=".activities.HelpActivity" />
         <activity android:name=".activities.DocumentsActivity" />
-        <activity android:name=".others.SplashScreen"></activity>
+        <activity android:name=".others.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".activities.Fare_and_RateActivity" />
         <activity android:name=".activities.SettingsActivity" />
