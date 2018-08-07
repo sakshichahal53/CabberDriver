@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="422.7dp"
+    android:background="#3a7f14">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Your Current Rating"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_regular"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_star_bottom_nav"
+            android:tint="#ffd800"
+            android:layout_marginLeft="83dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_marginLeft="21dp"
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="4.68"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/white"
+            android:textSize="63sp"/>
+
+
+        
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_star_bottom_nav"
+        android:tint="#ffd800"
+        android:layout_marginLeft="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_marginLeft="15dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="229dp"
+        android:layout_height="9dp"
+        android:layout_gravity="center_vertical"
+        android:progress="70"
+        android:progressDrawable="@drawable/yellow_progress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="392"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:layout_marginLeft="21dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_star_bottom_nav"
+            android:tint="#ffd800"
+            android:layout_marginLeft="8dp"/>
+
+        <ProgressBar
+            android:layout_marginLeft="15dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="229dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center_vertical"
+            android:progress="70"
+            android:progressDrawable="@drawable/green_progress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="392"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="21dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_star_bottom_nav"
+            android:tint="#ffd800"
+            android:layout_marginLeft="8dp"/>
+
+        <ProgressBar
+            android:layout_marginLeft="15dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="229dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center_vertical"
+            android:progress="70"
+            android:progressDrawable="@drawable/green_progress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="392"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="21dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_star_bottom_nav"
+            android:tint="#ffd800"
+            android:layout_marginLeft="8dp"/>
+
+        <ProgressBar
+            android:layout_marginLeft="15dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="229dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center_vertical"
+            android:progress="70"
+            android:progressDrawable="@drawable/green_progress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="392"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="21dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_star_bottom_nav"
+            android:tint="#ffd800"
+            android:layout_marginLeft="8dp"/>
+
+        <ProgressBar
+            android:layout_marginLeft="15dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="229dp"
+            android:layout_height="9dp"
+            android:layout_gravity="center_vertical"
+            android:progress="70"
+            android:progressDrawable="@drawable/green_progress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="392"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:layout_marginLeft="21dp"/>
+    </LinearLayout>
+    
+
+</LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_offline"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+       >
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Total Trips yet"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="#8e8e8e" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Total Rated Trips"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="#8e8e8e" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="24dp"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_directions_car_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="420"
+                android:layout_weight="2"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_marginLeft="25dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_directions_car_black_24dp"
+                android:tint="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="368"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

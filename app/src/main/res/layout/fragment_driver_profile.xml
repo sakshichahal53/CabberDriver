@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_driver_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_driver_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="OFFLINE"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Switch
+            android:id="@+id/switch_driver_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/tv_driver_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="ONLINE"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ctv_driver_info"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Passenger Info"
+                android:textColor="#a1a1a1"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_driver_view_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="View Profile"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/input_merged_edittext"
+                android:src="@drawable/man_on_faresummary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:fontFeatureSettings="15sp"
+                        android:letterSpacing="0.04"
+                        android:text="Ravinder Singh"
+                        android:textColor="@color/black" />
+
+                    <ImageButton
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="4.7"
+                        android:textSize="11sp" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:paddingTop="6dp"
+                        android:rating="5.0"
+                        android:scaleX="0.3"
+                        android:scaleY="0.3"
+                        android:transformPivotX="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Hyundai Wagon R"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="74dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Change"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="DL1 ZA 5887"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+<RelativeLayout
+    android:id="@+id/grid_cards"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/ctv_driver_info"
+    android:padding="6dp">
+    <LinearLayout
+        android:id="@+id/cv_help_doc"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:elevation="10dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_help_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_documents"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Documents"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cv_settings_trips"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cv_help_doc"
+        android:layout_marginTop="6dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:elevation="10dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_mytrips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_directions_car_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Trips"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cv_share_about"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cv_settings_trips"
+        android:layout_marginTop="6dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:elevation="10dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_share_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_error_black_24dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
